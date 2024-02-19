@@ -101,5 +101,7 @@ if __name__ == "__main__":
         # Generate usernames
         usernames = generate_usernames(fname, lname)
         generate_output(usernames)
-
+        print("Permuatation Finish!")
+        print("Output: username_list.txt")
+    
     else: sys.exit(1)
