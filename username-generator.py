@@ -1,4 +1,16 @@
 #!/usr/bin/env python3
+# This python script takes First Name and Last Name and generate a list of permutatopn as output.
+# Usage 1: ./username-generator.py <Username_list.txt>
+# ** Username list should contain Firstname and Lastname on each line **
+#   Example:
+#   Zed Smith
+#   Ted Harry
+#
+#
+# Usage 2: ./username-generator.py <First Name> <Last Name>
+#
+#
+# Output > username_list.txt
 
 import sys
 
@@ -76,6 +88,8 @@ if __name__ == "__main__":
                 usernames_list = generate_usernames(fname, lname)
                 total_usernames_list += usernames_list    
             generate_output(total_usernames_list)
+            print("Permuatation Finish!")
+            print("Output: username_list.txt")
 
     elif len(sys.argv) == 3:
         print("Usage: python script.py <fname> <lname>")
